@@ -50,9 +50,9 @@ ActiveRecord::Schema.define(version: 2021_07_29_114612) do
   end
 
   create_table "specialties", force: :cascade do |t|
+    t.string "specialty_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "specialty_name"
   end
 
   create_table "specialty_doctors", force: :cascade do |t|
